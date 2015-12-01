@@ -266,7 +266,7 @@ extension NSOutputStream {
 	func Write (s: String) {
 		let data: NSData = s.dataUsingEncoding(NSUTF8StringEncoding)!
 		self.write(UnsafePointer(data.bytes), maxLength: data.length)
-	}
+  }
 	
 	func WriteLine (s: String = "") { Write(s + "\n") }
 	

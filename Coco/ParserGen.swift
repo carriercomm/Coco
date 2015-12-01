@@ -410,7 +410,7 @@ public class StringWriter {
     var stream: String = ""
 
 	public func Write(s: String) { print(s, terminator: "", toStream: &stream) }
-	public func WriteLine(s: String = "") { Write(s + "\n") }
+	public func WriteLine(s: String = "") { Write(s + "\n\r") }
 	
     public var string : String { return stream }
     

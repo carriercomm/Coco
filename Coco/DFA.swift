@@ -858,6 +858,7 @@ public class DFA {
             if m!.state!.nr == nr { return m!.set } else { m = m!.next }
         }
         assert(false, "compiler error in Melted.Set")
+        return m!.set
     }
     
     func StateWithSet(s: BitArray) -> Melted?  {

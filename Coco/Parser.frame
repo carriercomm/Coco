@@ -131,7 +131,7 @@ public class Errors {
         let str = String(format: format, line, col, s)
         WriteLine(str)
     }
-    func WriteLine(s: String) { Write(s + "\n") }
+    func WriteLine(s: String) { Write(s + "\n\r") }
     
     public func SynErr (line: Int, col: Int, n: Int) {
         var s: String
